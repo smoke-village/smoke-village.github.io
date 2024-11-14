@@ -138,7 +138,7 @@ const chapters = {
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站作者：Admi1230</p>
         <br>
         <br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站版本：正式版 1.0.0</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站版本：正式版 1.0.0，完成于2024年11月15日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;内容版本2024.11.13</p>
         <br>
         <br>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;没啥好说的，作者发 114514 度高烧写出来的逆天网站，对新人或许有帮助</p>
