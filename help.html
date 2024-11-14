@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帮助页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+
+ 
+        .sidebar {
+            width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .back-button {
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+
+        .sidebar ul {
+            list-style-type: none;
+            padding-top: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+            margin: 10px 0;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease; 
+        }
+
+        .sidebar ul li:hover {
+            background-color: #f0f0f0;
+        }
+
+        .sidebar ul li.normal {
+            background-color: transparent; 
+        }
+
+   
+        .sidebar ul li.expanded {
+            background-color: #e0e0e0; 
+        }
+
+
+        .sub-chapter {
+            display: none;
+            overflow: hidden;
+            padding-left: 20px; 
+            transition: max-height 0.5s ease-out;
+            max-height: 0; 
+        }
+
+        .sub-chapter.open {
+            display: block;
+            max-height: 1000px; 
+        }
+
+       
+        .arrow {
+            display: inline-block;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .arrow.rotate {
+            transform: rotate(90deg); 
+        }
+
+        .content {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 左侧目录 -->
+        <div class="sidebar">
+            <!-- 返回首页按钮 -->
+            <button class="back-button" onclick="window.location.href='index.html'">返回首页</button>
+            
+            <h3>帮助目录</h3>
+            <ul>
+                <li onclick="toggleChapter('chapter1', this)" class="normal">
+                    <span class="arrow">&#62;</span>新手注意事项
+                </li>
+                <ul class="sub-chapter" id="chapter1">
+                    <li onclick="showContent('chapter1.1')">1.1 如何加入城镇，新人会得到什么帮助？</li>
+                    <li onclick="showContent('chapter1.2')">1.2 服务器常用命令是什么</li>
+                </ul>
+                <li onclick="toggleChapter('chapter2', this)" class="normal">
+                    <span class="arrow">&#62;</span>章节 2: 注意事项
+                </li>
+                <ul class="sub-chapter" id="chapter2">
+                    <li onclick="showContent('chapter2.1')">2.1 smoke 小镇</li>
+                    <li onclick="showContent('chapter2.2')">2.2 整个服务器</li>
+                </ul>
+                <li onclick="toggleChapter('chapter3', this)" class="normal">
+                    <span class="arrow">&#62;</span>章节 3: 更多
+                </li>
+                <ul class="sub-chapter" id="chapter3">
+                    <li onclick="showContent('chapter3.1')">3.1 关于本网站</li>
+                    <li>3.2 正在更新中~~~awa</li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- 右侧内容区域 -->
+        <div class="content" id="content-area">
+            <h2>请选择一个章节</h2>
+            <p>点击左侧目录中的章节查看详细内容。</p>
+            <p>更新于2024.11.13</p>
+            <br>
+            <p>由于网站面向公网开放，因此重要信息不会展示。</p>
+        </div>
+    </div>
+    <script src="nei_rong.js"></script>
+    <script>
+
+        function toggleChapter(chapterId, liElement) {
+            var subChapter = document.getElementById(chapterId);
+            var arrow = liElement.querySelector('.arrow');
+
+
+            if (subChapter.classList.contains('open')) {
+                subChapter.classList.remove('open');
+                arrow.classList.remove('rotate');
+                liElement.classList.remove('expanded');
+            } else {
+
+                subChapter.classList.add('open');
+                arrow.classList.add('rotate');
+                liElement.classList.add('expanded');
+            }
+        }        
+        
+
+        function showContent(chapterId) {
+
+            var contentArea = document.getElementById('content-area');
+            
+
+            if (chapters[chapterId]) {
+                contentArea.innerHTML = chapters[chapterId];
+            } else {
+                contentArea.innerHTML = '<h2>章节不存在</h2><p>您选择的章节无法找到，请重试。</p>';
+            }
+        }
+    </script>
+    
+
+</body>
+</html>

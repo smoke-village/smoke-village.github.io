@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMOKE - 新闻</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .background-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .background-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            object-position: center; 
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); 
+            backdrop-filter: blur(5px); 
+            padding: 15px 0;
+            z-index: 10;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar nav ul li {
+            margin: 0 20px;
+        }
+
+        .navbar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #f1f1f1;
+        }
+
+ 
+        .about-section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 30px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px); 
+            text-align: center;
+            z-index: 5;
+        }
+
+        .about-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <img src="image/about_1.png" alt="背景图片">
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="services.html">服务</a></li>
+                <li><a href="help.html">帮助</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-section">
+        <h1>smoke - 新闻</h1>
+        <p>
+                <strong>2021年11月14日</strong><br>
+                <br>
+                <br>
+                1：目前，主城正在进行迁移
+                <br>
+                <br>
+                
+        </p>
+    </div>
+</body>
+</html>
