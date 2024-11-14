@@ -1,4 +1,5 @@
-# smo-vil
+This is a static site hosted by github.
 
-for a webside
-用于为某个网站提供图片
+A minecraft webside at github
+
+emm...  hello.
