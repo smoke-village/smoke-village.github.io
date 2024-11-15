@@ -141,17 +141,13 @@ const chapters = {
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注意：网站没有对窄屏（手机端）做适配，强烈建议使用电脑端访问</p>
         <br>
         <br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;没啥好说的，作者发 114514 度高烧写出来的逆天网站，对新人或许有帮助</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;没啥好说的，作者发 114514 度高烧写出来的即逆天又抽象网站，对新人或许有帮助</p>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;—————————————————————————————————————</p>
-        <br>
-        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;=======================</p>
         <br>
         <br>
         <br>
