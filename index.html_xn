@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站暂停服务</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1, h2, a {
+            margin: 20px 0;
+        }
+        hr {
+            width: 50%;
+            border: 1px solid #000;
+            margin: 20px 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer-text {
+            position: fixed;  /* 固定在页面底部 */
+            bottom: 10px;     /* 离底部20px */
+            left: 50%;        /* 居中 */
+            transform: translateX(-50%); /* 精确居中 */
+            font-size: 15px;
+            padding: 1px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>暂停服务公告</h1>
+    <hr>
+    <h2>很抱歉，由于某些原因，本网站于2024年11月16日暂停服务。</h2>
+    <br>
+    <p>未来不再考虑恢复网站工作，因为需要投入巨大成本。如果您真的十分希望网站重新恢复服务，并可以协助发挥网站的真正用途，我们会很愿意并尽力完成网站的恢复工作</p>
+    <br>
+    <br>
+    <p>感谢您这一段时间的支持，再见。</p>
+    <div class="footer-text">
+        
+        <p>Copyright © 2024.11.16 |  smoke-village 维护人员</p>
+    </div>
+</body>
+</html>
