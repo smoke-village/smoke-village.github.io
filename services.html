@@ -58,26 +58,26 @@
         });
 
         
-        L.imageOverlay('https://www.helloimg.com/i/2024/11/15/6737015d4310e.png', 
+        L.imageOverlay('https://www.helloimg.com/i/2024/11/19/673c883078596.png', 
             [[-100,-200], [100,200]] 
         ).addTo(map);
         
         // 保证打开地图就能看到小南梁餐厅标记
-        var marker_1 = L.marker([-33.29, -72.1]).addTo(map);
+        var marker_1 = L.marker([-34.29, -72.1]).addTo(map);
         marker_1.bindPopup("小男娘の餐厅（一楼）").openPopup();
 
         // 添加多个标记
         var markers = [
-            {lat: -26, lng: 28.7, name: "蜘蛛刷怪塔+tetra锻造台+充电器"},
-            {lat: -37.28, lng: -25.8, name: "地狱门"},
-            {lat: -53.04, lng: -18.31, name: "村民交易所 - 1"},
-            {lat: -83.77, lng: -47.31, name: "火药塔"},
-            {lat: -77.3, lng: -109.9, name: "僵尸塔"},
-            {lat: 45.3, lng: 3.9, name: "天空农场"},
-            {lat: -84.3, lng: 159.9, name: "末地门"},
-            {lat: -48.9, lng: -31.4, name: "仓库"},
-            {lat: 84.3, lng: -35.5, name: "村民交易所 - 2"},
-            {lat: 84.69, lng: -23.1, name: "凋零骷髅塔"}
+            {lat: -28, lng: 28.7, name: "蜘蛛刷怪塔+tetra锻造台+充电器"},
+            {lat: -39.28, lng: -25.8, name: "地狱门"},
+            {lat: -54.04, lng: -18.31, name: "村民交易所 - 1"},
+            {lat: -83.87, lng: -47.31, name: "火药塔"},
+            {lat: -78.3, lng: -109.9, name: "僵尸塔"},
+            {lat: 46.3, lng: 3.9, name: "天空农场"},
+            {lat: -84.3, lng: 163.9, name: "末地门"},
+            {lat: -49.9, lng: -31.4, name: "仓库"},
+            {lat: 84.1, lng: -35.5, name: "村民交易所 - 2"},
+            {lat: 84.5, lng: -23.1, name: "凋零骷髅塔"}
         ];
 
         markers.forEach(function(item) {
