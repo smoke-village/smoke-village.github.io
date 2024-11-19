@@ -153,6 +153,6 @@ const chapters = {
         <br>
         <br>
         <br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站版本：正式版 1.0.0 Alpha 1  &nbsp;&nbsp; | &nbsp;&nbsp;   完成于2024.11.15 &nbsp; 16:24   nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;   内容版本2024.11.13</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站版本：正式版 1.1.2 Alpha 1  &nbsp;&nbsp; | &nbsp;&nbsp;   完成于2024.11.19 &nbsp; 16:24   &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;   内容版本2024.11.13</p>
     `,
-};
+}

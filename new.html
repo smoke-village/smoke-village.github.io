@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMOKE - 新闻</title>
+    <title>SMOKE - 消息</title>
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -13,22 +12,10 @@
             font-family: Arial, sans-serif;
         }
 
-
-        .background-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-
-        .background-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-            object-position: center; 
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 1rem;
         }
 
         .navbar {
@@ -36,8 +23,8 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.7); 
-            backdrop-filter: blur(5px); 
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
             padding: 15px 0;
             z-index: 10;
         }
@@ -65,60 +52,98 @@
             color: #f1f1f1;
         }
 
- 
-        .about-section {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            max-width: 800px;
-            background-color: rgba(255, 255, 255, 0.8); 
+        .message-section {
+            margin-top: 50px; 
+            width: 90%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
             padding: 30px;
+            background-color: rgba(255, 255, 255, 0.2); 
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+            backdrop-filter: blur(10px);
+            display: grid; 
+            gap: 20px; /* 设置每个块之间的间隙 */
+        }
+
+        /* 每条消息块样式 */
+        .message-block {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+            position: relative; 
+            transition: all 0.3s ease-in-out; 
+        }
+
+        .message-block:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-color: #bbb;
+        }
+
+        .message-block h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 15px; 
+        }
+
+        .message-block p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-top: 10px; 
+        }
+
+        .message-block img {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
             border-radius: 8px;
-            backdrop-filter: blur(10px); 
-            text-align: center;
-            z-index: 5;
+        }
+        hr {
+            width: 50%;
+            border: 1px solid #000;
+            margin: 20px 0;
         }
 
-        .about-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .about-section p {
-            font-size: 1.2rem;
-        }
     </style>
 </head>
 <body>
-    <div class="background-container">
-        <img src="https://www.helloimg.com/i/2024/11/15/6737015622256.png" alt="背景图片">
-    </div>
 
-    <!-- 导航栏 -->
     <header class="navbar">
         <nav>
             <ul>
                 <li><a href="index.html">首页</a></li>
-                <li><a href="#">新闻</a></li>
+                <li><a href="#">消息</a></li>
                 <li><a href="services.html">服务</a></li>
                 <li><a href="help.html">帮助</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="about-section">
-        <h1>smoke - 新闻</h1>
-        <p>
-                <strong>2021年11月14日</strong><br>
-                <br>
-                <br>
-                1：目前，主城正在进行迁移
-                <br>
-                <br>
-                
-        </p>
+    <div class="message-section">
+        <div class="message-block">
+            <h2>smoke - 新闻</h2>
+            <p>目前，主城正在进行迁移工作，主要建筑已经大致完工。</p>
+            <p style="font-size: 13px;">(本栏可由镇管理组进行更新)</p>
+        </div>              
     </div>
+    <dvi class="message-section">
+        <h1 style="width: 50%; margin: 0 auto; text-align: center; font-size: 2rem;">留言板</h1>
+        <div class="message-block">
+            <h2>高价回收下界合金锭</h2>
+            <p>玩家：Admi1230</p>
+            <p>高价回收下界合金锭啦兄弟们！300一个下界合金锭，或者290四个碎片，想要出售的可以在游戏中私信，在主城进行交易。</p>            
+            <img src="https://www.helloimg.com/i/2024/11/19/673c1443db0ef.png" alt="求求了~awa~">
+            <p><a href="https://www.bilibili.com/video/BV1AbteeFEV9" , target="_blank">大病 awa</a></p>
+        </div>
+        <div class="message-block">
+            <h2>什么？你也想在此留言？</h2>
+            <p>尝试访问该链接留言<a href="http://uk.frp.one:36365/" , target="_blank">点我前往留言网站 awa</a></p>
+            <p>（服务器不定时开启，集中在白天，如果没开启并且很急的话，可以去群里@Admi1230去催）</p>
+            <img src="https://www.helloimg.com/i/2024/11/19/673c14445c198.png" alt="茶叶村の攒劲小节目">
+        <div>
+    </dvi>
+
 </body>
 </html>
