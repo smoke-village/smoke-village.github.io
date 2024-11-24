@@ -141,7 +141,7 @@ const chapters = {
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注意：网站没有对窄屏（手机端）做适配，强烈建议使用电脑端访问</p>
         <br>
         <br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;没啥好说的，作者发 114514 度高烧写出来的即逆天又抽象网站，对新人或许有帮助</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;没啥好说的，作者发 114514 度高烧写出来的即逆天又抽象的网站，对新人或许有帮助</p>
         <br>
         <br>
         <br>
@@ -153,7 +153,9 @@ const chapters = {
         <br>
         <br>
         <br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站版本：正式版 1.1.2 Alpha 1  &nbsp;&nbsp; | &nbsp;&nbsp;   完成于2024.11.19 &nbsp; 16:24   &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;   内容版本2024.11.13</p>
+        <p>&emsp;&emsp;&emsp;&emsp;网站由Admi1230维护，欢迎任何人对网站内容提出宝贵的修改意见</p>
+        <br>
+        <p>&emsp;&emsp;&emsp;&emsp;版本：1.1.5 &emsp;    Alpha 1   &emsp;&emsp;&emsp;  |  &emsp;&emsp;&emsp;更新时间：2024.11.24&emsp;&emsp;内容版本：2024.11.19</p>
     `,
     'chapter3.2': `
         <h2>章节 2：资源存储库</h2>
