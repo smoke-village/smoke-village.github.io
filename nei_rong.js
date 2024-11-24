@@ -155,4 +155,17 @@ const chapters = {
         <br>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站版本：正式版 1.1.2 Alpha 1  &nbsp;&nbsp; | &nbsp;&nbsp;   完成于2024.11.19 &nbsp; 16:24   &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;   内容版本2024.11.13</p>
     `,
+    'chapter3.2': `
+        <h2>章节 2：资源存储库</h2>
+        <br>
+        <br>
+        <p>这里存放了搜刮而来的资♂源</p>
+        <br>
+        <br>
+        <p>&emsp;&emsp;&emsp;&emsp;1：你不会使用锻造mod？有人已经帮你总结了</p>
+        <br>
+        <p>&emsp;&emsp;&emsp;&emsp;资源提供者：jxvruxvb</p>
+        <br>
+        <p>&emsp;&emsp;&emsp;&emsp;<a href="/files/tetra_help.docx">锻造mod从入门到入土</a></p>
+    `,
 }
