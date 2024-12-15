@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMOKE - 文件存储平台</title>
+    
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        header {
+            background-color: #0078d4;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        
+        .file-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            padding: 15px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .file-item img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        .file-item .file-info {
+            flex: 1;
+        }
+
+        .file-item .file-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .file-item .file-size {
+            color: #666;
+        }
+
+        
+        .file-item .file-description {
+            font-size: 14px;
+            color: #444;
+            margin-top: 5px;
+        }
+
+        
+        .file-item .actions {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .file-item .download-btn {
+            background-color: #0078d4;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .file-item .download-btn:hover {
+            background-color: #005fa3;
+        }
+
+
+
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #file-description {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+            max-width: 90%;
+            text-align: left;
+        }
+
+        .divider {
+            margin: 40px 0;
+            border-top: 1px solid #ddd;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hint {
+            position: fixed;
+            bottom: 0;
+            left: auto;
+            width: 100%;
+            padding: 15px;
+            background-color: #fff;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header>
+        <div class="logo">文件存储平台</div>
+        <a href="/" class="home-btn">返回主页</a>
+    </header>
+
+    <!-- 文件展示区域 -->
+    <ul id="file-list" class="file-list">
+    </ul>
+
+    <!-- 分割线 -->
+    <div class="divider"></div>
+    <!-- 提示区域（放在页面底部） -->
+    <div class="hint">
+        <p>Copyright 2024 | 内部网站，请勿外传</p>
+    </div>
+
+
+    
+    <script>
+        
+        const files = [
+            { 
+                name: "锻造模组从入门到入土", 
+                size: "来源：jsvruxvb", 
+                description: "从奥恩那里抢来的远古锻造文档，看完直接变奥恩",
+                type: "docx",
+                downloadLink: "/files/tetra_help.docx" 
+            },
+            { 
+                name: "pvp整合包", 
+                size: "来源：Admi1230", 
+                description: "下载完成后，直接将文件拖动到pcl窗口中就能自动安装。| 服务器不定时开启",
+                type: "zip",
+                downloadLink: "/files/pvp_c.zip" 
+            },
+        ];
+
+        
+        function renderFiles() {
+            const fileList = document.getElementById('file-list');
+            fileList.innerHTML = '';
+
+            files.forEach((file) => {
+                const fileItem = document.createElement('li');
+                fileItem.classList.add('file-item');
+                
+                const fileIcon = document.createElement('img');
+                fileIcon.src = `https://via.placeholder.com/40x40.png?text=${file.type.toUpperCase()}`; // 占位符图标
+                fileItem.appendChild(fileIcon);
+
+                const fileInfo = document.createElement('div');
+                fileInfo.classList.add('file-info');
+                
+                const fileName = document.createElement('div');
+                fileName.classList.add('file-name');
+                fileName.textContent = file.name;
+                fileInfo.appendChild(fileName);
+
+                const fileSize = document.createElement('div');
+                fileSize.classList.add('file-size');
+                fileSize.textContent = file.size;
+                fileInfo.appendChild(fileSize);
+
+                const fileDescription = document.createElement('div');
+                fileDescription.classList.add('file-description');
+                fileDescription.textContent = file.description;  
+                fileInfo.appendChild(fileDescription);
+
+                
+                const actions = document.createElement('div');
+                actions.classList.add('actions');
+                
+                const downloadBtn = document.createElement('a');
+                downloadBtn.classList.add('download-btn');
+                downloadBtn.href = file.downloadLink;  
+                downloadBtn.textContent = "下载";
+                actions.appendChild(downloadBtn);
+
+                fileItem.appendChild(fileInfo);
+                fileItem.appendChild(actions);
+                fileList.appendChild(fileItem);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', renderFiles);
+    </script>
+</body>
+</html>
