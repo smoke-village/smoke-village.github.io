@@ -135,7 +135,7 @@ const chapters = {
         <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于本网站</h3>
         <br>
         <br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站作者：Admi1230</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站作者：Da_nuo</p>
         <br>
         <br>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注意：网站没有对窄屏（手机端）做适配，强烈建议使用电脑端访问</p>
@@ -153,7 +153,7 @@ const chapters = {
         <br>
         <br>
         <br>
-        <p>&emsp;&emsp;&emsp;&emsp;网站由Admi1230维护，欢迎任何人对网站内容提出宝贵的修改意见</p>
+        <p>&emsp;&emsp;&emsp;&emsp;网站由Da_nuo维护，欢迎任何人对网站内容提出宝贵的修改意见</p>
         <br>
         <p>&emsp;&emsp;&emsp;&emsp;版本：1.3.0   &emsp;&emsp;&emsp;  |  &emsp;&emsp;&emsp;更新时间：2024.12.15&emsp;&emsp;内容版本：2024.11.30</p>
         <br>
